@@ -249,6 +249,7 @@ inline TVariant constructIfType(const QVariant &var) {
 
 }
 
+/*
 template <typename... TArgs>
 inline QVariant varToQVar(const std::variant<TArgs...> &var) {
 	return std::visit([](const auto &value) {
@@ -260,7 +261,7 @@ template <typename... TArgs>
 inline std::variant<TArgs...> qVarToVar(const QVariant &var) {
 	return variant_helpers::constructIfType<std::variant<TArgs...>, TArgs...>(var);
 }
-
+*/
 
 }
 

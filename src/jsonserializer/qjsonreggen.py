@@ -16,7 +16,7 @@ class Mode(Enum):
 
 
 def escaped(name):
-	return re.sub(r"\W", "_", name, re.ASCII)
+	return re.sub(r"\W", "_", name)
 
 
 def mode_fn(mode):
