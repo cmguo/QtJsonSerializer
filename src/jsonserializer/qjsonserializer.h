@@ -376,7 +376,6 @@ template<typename T>
 bool QJsonSerializer::registerListConverters()
 {
 	return registerListContainerConverters<QList, T>() &
-			registerListContainerConverters<QLinkedList, T>(&QLinkedList<T>::append, nullptr) &
 			registerListContainerConverters<QVector, T>() &
 			registerListContainerConverters<QStack, T>() &
 			registerListContainerConverters<QQueue, T>();
